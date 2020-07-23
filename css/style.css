@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(56, 210, 194, 0.5), rgba(25, 74, 138, 0.5)), url(/img/bg.webp);
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 62px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__text {
+  margin-left: 16px;
+  font-size: 31px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.menu {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 29px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+  color: #fff;
+  margin: 0 80px 0 0;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list li:hover .sub-menu__list {
+  display: block;
+}
+
+.menu__link {
+  color: #fff;
+}
+
+.sub-menu__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding-top: 15px;
+}
+
+.sub-menu__link {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.sub-menu__link:hover {
+  background: #fff;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
